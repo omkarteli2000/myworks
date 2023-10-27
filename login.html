@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Login/Signup Popup</title>
+</head>
+<body>
+  <button id="openPopupBtn">Open Popup</button>
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <span id="closePopupBtn" class="close">&times;</span>
+      <div class="tabs">
+        <button id="loginTabBtn" class="tab-btn active">Login</button>
+        <button id="signupTabBtn" class="tab-btn">Signup</button>
+      </div>
+      <div class="forms" >
+        <form id="loginForm" class="form active">
+          <form id="loginForm" class="form active">
+            <h2>Login</h2>
+            <div class="form-group"> 
+              <label>User name</label>
+              <input type="text" id="loginEmailMobile" placeholder="Email or Mobile">
+              <div class="error" id="loginEmailMobileError"></div>
+            </div>
+            <div class="form-group">
+              <label>password</label>
+              <input type="password" id="loginPassword" placeholder="Password">
+              <div class="error" id="loginPasswordError"></div>
+            </div>
+            <label>
+              <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+            </label>
+            <button type="submit">Login</button>
+          </form>
+        </form>
+        <form id="signupForm" class="form">
+          <form id="signupForm" class="form">
+            <h2>Sign Up</h2>
+            
+            <div class="form-group">
+              <label>Full name*</label> 
+              <input type="text" id="signupName" placeholder="Name">
+              <div class="error" id="signupNameError"></div>
+            </div>
+            
+            <div class="form-group">
+              <label>Email*</label>  
+              <input type="text" id="signupEmail" placeholder="Email">
+              <div class="error" id="signupEmailError"></div>
+            </div>
+            
+            <div class="form-group">
+              <label>contact* </label>  
+              <input type="text" id="signupMobile" placeholder="Mobile">
+              <div class="error" id="signupMobileError"></div>
+            </div>
+            
+            <div class="form-group">
+              <label>Password*</label>
+              <input type="password" id="signupPassword" placeholder="Password">
+              <div class="error" id="signupPasswordError"></div>
+            </div>
+            <label>
+              <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+            </label>
+            <div class="clearfix">
+              <button type="button" class="cancelbtn">Back</button>
+              <button type="submit" class="signupbtn">Sign Up</button>
+            </div>
+          </form>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
